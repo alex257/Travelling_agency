@@ -1,0 +1,50 @@
+.benefits-head {
+  background: $benefits-color;
+  padding: 3rem;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  text-align: center;
+
+  h3 {
+    padding: 1rem;
+  }
+}
+
+.cards {
+  width: 90%;
+  min-height: 70vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+  min-height: 40vh;
+  margin: 2rem 5rem;
+  flex: 1 1 25rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 10px 10px rgba(0, 0, 0, 0.1);
+
+  h4,p {
+    padding: 1rem;
+  }
+}
+
+.card-icon {
+  background: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+
+  img {
+    //height: 100px;
+    max-width: 15%;
+    margin: 2rem;
+  }
+}

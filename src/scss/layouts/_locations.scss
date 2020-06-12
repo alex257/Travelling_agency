@@ -1,0 +1,99 @@
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("/../img/new-york-page.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden; //hide clouds animation
+
+  .locations-head {
+    width: 90%;
+    //border: 2px solid pink;
+    margin: auto;
+
+    h2 {
+      padding: 1rem 0;
+      text-decoration: underline;
+      text-decoration-thickness: 0.5rem;
+    }
+
+    h3 {
+      padding: 4rem 0;
+      background: linear-gradient($black, $brown);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @media screen and (max-width: 932px) {
+        background: transparentize($black,.2);
+        -webkit-text-fill-color: $white;
+      }
+
+    }
+  }
+
+  .cloud {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @media screen and (max-width: 932px) {
+        height: 40rem;
+    }
+
+  }
+
+  .moving-cloud-1 {
+    animation: cloudAnimation 3s infinite alternate ease-in-out;
+    @media screen and (max-width: 932px) {
+        z-index: -1;
+    }
+
+  }
+  .moving-cloud-2 {
+    top: 20%;
+    z-index: -1;
+    opacity: 0.5;
+    animation: cloudAnimation 3.2s infinite alternate ease-in-out;
+    @media screen and (max-width: 932px) {
+        z-index: -2;
+        opacity: 0.9;
+    }
+
+  }
+}
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+
+
+
+@media screen and (max-width: 932px) {
+  
+    .locations-head{
+        
+    .cloud {
+      height: 40rem;
+    }
+  
+    .moving-cloud-1 {
+      z-index: -1;
+    }
+  
+    .moving-cloud-2 {
+      z-index: -2;
+      opacity: 0.9;
+    }
+  
+    h3 {
+      background: $white;
+      -webkit-text-fill-color: $black;
+    }
+  }
+}
