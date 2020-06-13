@@ -1,28 +1,28 @@
-.hero{
-    background: linear-gradient(rgba(0,0,0,.5), transparent), url("../img/landing-page.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 90vh;
-    color: $white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("../img/landing-page.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-    h3{
-        padding: 5rem;
+  h3 {
+    padding: 5rem;
+  }
+
+  @media screen and (max-width: 932px) {
+    nav {
+      text-align: center;
     }
 
-    @media screen and (max-width:932px){
-
-        nav{
-            text-align: center;
-        }
-
-        #logo{
-            padding: 2rem;
-        }
+    #logo {
+      padding: 2rem;
     }
+  }
 }

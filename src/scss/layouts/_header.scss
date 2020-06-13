@@ -1,14 +1,19 @@
 .main-header {
   background: $black;
   color: $white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
 
   nav {
-    min-height: 10vh;
-    display: flex;
     width: 90%;
+    min-height: 10vh;
     margin: auto;
     padding: 2rem;
+    display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
 
     ul {
       display: flex;

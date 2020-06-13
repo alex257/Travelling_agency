@@ -26,10 +26,9 @@
       background-clip: text;
       -webkit-text-fill-color: transparent;
       @media screen and (max-width: 932px) {
-        background: transparentize($black,.2);
+        background: transparentize($black, 0.2);
         -webkit-text-fill-color: $white;
       }
-
     }
   }
 
@@ -38,28 +37,25 @@
     top: 0;
     right: 0;
     @media screen and (max-width: 932px) {
-        height: 40rem;
+      height: 40rem;
     }
-
   }
 
   .moving-cloud-1 {
     animation: cloudAnimation 3s infinite alternate ease-in-out;
     @media screen and (max-width: 932px) {
-        z-index: -1;
+      z-index: -1;
     }
-
   }
   .moving-cloud-2 {
-    top: 20%;
+    top: 10%;
     z-index: -1;
     opacity: 0.5;
     animation: cloudAnimation 3.2s infinite alternate ease-in-out;
     @media screen and (max-width: 932px) {
-        z-index: -2;
-        opacity: 0.9;
+      z-index: -2;
+      opacity: 0.9;
     }
-
   }
 }
 @keyframes cloudAnimation {
@@ -71,26 +67,21 @@
   }
 }
 
-
-
-
 @media screen and (max-width: 932px) {
-  
-    .locations-head{
-        
+  .locations-head {
     .cloud {
       height: 40rem;
     }
-  
+
     .moving-cloud-1 {
       z-index: -1;
     }
-  
+
     .moving-cloud-2 {
       z-index: -2;
       opacity: 0.9;
     }
-  
+
     h3 {
       background: $white;
       -webkit-text-fill-color: $black;
